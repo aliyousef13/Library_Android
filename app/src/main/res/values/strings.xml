@@ -1,0 +1,83 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyFirstApp</string>
+    <string name="welcome">Welcome, Ali</string>
+    <string name="welcome_plain">Welcome</string>
+    <string name="welcome_cyberLearn">Welcome to CyberLearn</string>
+
+    <string name="cyber_image_desc">Cyber security concept image</string>
+    <string name="start">Start now</string>
+
+    <string name="os_sec">OS Security</string>
+    <string name="web_security">Web Security</string>
+    <string name="in_security">Information Security</string>
+
+    <string name="win_key">Windows Key</string>
+    <string name="off_key">Office Key</string>
+    <string name="win_def">Win Defender</string>
+
+    <string name="blood">BloodBank</string>
+    <string name="famous">famous</string>
+    <string name="email">Email address</string>
+    <string name="username">User name</string>
+    <string name="password">password</string>
+
+    <string name="cyber_learn">CyberLearn</string>
+    <string name="register">Register</string>
+    <string name="login">Log in</string>
+
+
+    <string name="back_button">Back</string>
+    <string name="buy_button">Buy Now</string>
+    <string name="library_button">Explore Library</string>
+
+
+
+    <!-- OS Security -->
+
+    <string name="text_os">An operating system (OS) is the main software that manages computer hardware and provides a platform for running applications. Examples include Windows, Linux, and macOS</string>
+    <string name="attack_os">An attacker exploits a flaw to gain admin/root access.</string>
+
+
+    <!-- Information Security -->
+    <string name="sql_practical">If the site uses a direct SQL query like</string>
+
+    <string name="list_vulnerabilities">• Phishing\n• SQL Injection\n• Brute Force</string>
+
+    <string name="information_security">(Information Security)</string>
+
+    <string name="text_inf">Information security is concerned with protecting data from theft, modification, or destruction, and includes protecting networks, systems, and even user behavior.</string>
+
+    <string name="vulnerabilities">🔒 Famous vulnerabilities:</string>
+    <string name="injection">🧪 SQL Injection:</string>
+
+    <string name="sql">SELECT * FROM users WHERE username = \'$user\' AND password = \'$pass\';</string>
+
+    <string name="query">He wrote in the username:\n\n\' OR \'1\'=\'1\n\nThe query will become:</string>
+
+    <string name="sql_implement">SELECT * FROM users WHERE username = \'\' OR \'1\'=\'1\' AND password = \'$pass\';</string>
+
+    <string name="result_sql">📌 Result: Log in to your account without a password!</string>
+
+
+    <!-- Web Security -->
+    <string name="title_web">Web Application Security</string>
+
+    <string name="text_web">Web security focuses on protecting websites from attacks such as XSS and CSRF, which may allow hackers to steal data or hijack user sessions.</string>
+
+    <string name="vulnerabilities_web">🔒 Common Vulnerabilities:</string>
+
+    <string name="list_web">• XSS – Cross Site Scripting\n• CSRF – Cross Site Request Forgery\n• Clickjacking – Deceptive Clicking\n• File Upload Vulnerability – Uploading malicious files</string>
+
+    <string name="practical">🧪 Practical Example: XSS</string>
+
+    <string name="xss">If a website allows comments and does not sanitize input, an attacker may inject JavaScript like:</string>
+
+    <string name="xss_attack">&lt;script&gt;alert(\'XSS Attack\')&lt;/script&gt;</string>
+
+    <string name="result_xss">📌 Result: JavaScript runs in the user\'s browser without permission!</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_b"
+        android:padding="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cyber_learn"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_plain"
+        android:textStyle="bold"
+        android:textSize="25sp"
+
+        android:textColor="@color/black"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:fontFamily="serif"
+        />
+
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_with_border"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:hint="@string/username"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/gray_black"
+        android:autofillHints="username"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_with_border"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/gray_black"
+        android:autofillHints="emailAddress"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_with_border"
+        android:hint="@string/password"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+
+        android:textColorHint="@color/gray_black"
+        android:autofillHints="password"
+        />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnRegister_1"
+        android:layout_width="400dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        android:textSize="17sp"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="@string/register"
+        android:textAllCaps="false"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Login?"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
