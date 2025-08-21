@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,8 +25,8 @@ public class CategoriesDetail extends AppCompatActivity {
             return insets;
         });
 
-        Button back0 = findViewById(R.id.but_0);
-        Button back = findViewById(R.id.but_go);
+        TextView back0 = findViewById(R.id.but_0);
+        TextView back = findViewById(R.id.but_go);
         Button web = findViewById(R.id.but_2);
         Button inf = findViewById(R.id.but_3);
         Button os = findViewById(R.id.but_4);

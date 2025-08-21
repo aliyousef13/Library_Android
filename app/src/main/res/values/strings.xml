@@ -11,9 +11,7 @@
     <string name="web_security">Web Security</string>
     <string name="in_security">Information Security</string>
 
-    <string name="win_key">Windows Key</string>
-    <string name="off_key">Office Key</string>
-    <string name="win_def">Win Defender</string>
+
 
     <string name="blood">BloodBank</string>
     <string name="famous">famous</string>
@@ -24,21 +22,28 @@
     <string name="cyber_learn">CyberLearn</string>
     <string name="register">Register</string>
     <string name="login">Log in</string>
+    <string name="login_we">Login</string>
 
 
     <string name="back_button">Back</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="order_button">Order Now</string>
     <string name="buy_button">Buy Now</string>
+    <string name="buy_course">Buy Course </string>
+    <string name="get_course">Get Course </string>
     <string name="library_button">Explore Library</string>
+    <string name="pay_button">Pay Now</string>
+    <string name="des_frag">Understanding cyber risks and how to prevent them....</string>
 
 
 
-    <!-- OS Security -->
 
     <string name="text_os">An operating system (OS) is the main software that manages computer hardware and provides a platform for running applications. Examples include Windows, Linux, and macOS</string>
     <string name="attack_os">An attacker exploits a flaw to gain admin/root access.</string>
 
 
-    <!-- Information Security -->
+
+
     <string name="sql_practical">If the site uses a direct SQL query like</string>
 
     <string name="list_vulnerabilities">• Phishing\n• SQL Injection\n• Brute Force</string>
@@ -59,7 +64,9 @@
     <string name="result_sql">📌 Result: Log in to your account without a password!</string>
 
 
-    <!-- Web Security -->
+
+
+
     <string name="title_web">Web Application Security</string>
 
     <string name="text_web">Web security focuses on protecting websites from attacks such as XSS and CSRF, which may allow hackers to steal data or hijack user sessions.</string>
@@ -78,6 +85,19 @@
 
 
 
+
+    <string name="about_os">Basics of processes, memory, scheduling, and I/O systems.</string>
+    <string name="about_web">Learn about XSS, SQLi, CSRF, and how to secure web apps.</string>
+    <string name="about_inf">Understand confidentiality, integrity, and availability (CIA).</string>
+
+
+    <string name="full_name">Enter full name</string>
+    <string name="enter_email">Enter email</string>
+    <string name="pay_with">Pay with</string>
+    <string name="card_number">Card number</string>
+    <string name="expiration_date">Expiration date</string>
+    <string name="check_box">I agree to the terms and conditions</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

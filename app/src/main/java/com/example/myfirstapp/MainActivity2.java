@@ -28,12 +28,32 @@ public class MainActivity2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+
+
+
         EditText userN = findViewById(R.id.etUserName);
         EditText email_1 = findViewById(R.id.etEmail);
         EditText password_1 = findViewById(R.id.etPassword);
 
         Button register = findViewById(R.id.btnRegister_1);
-        TextView login = findViewById(R.id.tv_login);
+        Button google = findViewById(R.id.but_google);
+
+        TextView l=findViewById(R.id.tv_login);
+
+
+
+
+
+        l.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ll=new Intent(MainActivity2.this,Login.class);
+                startActivity(ll);
+            }
+        });
+
 
 
 email_1.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +63,7 @@ email_1.setOnClickListener(new View.OnClickListener() {
 
             }
         });
-        password_1.setOnClickListener(new View.OnClickListener() {
+password_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity2.this,"*******",Toast.LENGTH_SHORT).show();
@@ -61,15 +81,15 @@ register.setOnClickListener(new View.OnClickListener() {
             }
         });
 
-login.setOnClickListener(new View.OnClickListener() {
+
+
+google.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        Intent lo = new Intent(MainActivity2.this,Login.class);
-        startActivity(lo);
+        Intent goog = new Intent(MainActivity2.this, Google.class);
+        startActivity(goog);
     }
 });
-
-
 
 
 

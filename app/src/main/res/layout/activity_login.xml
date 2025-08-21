@@ -7,26 +7,7 @@
     android:background="@color/white"
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white_b"
-        android:elevation="40dp"
-        android:padding="30dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cyber_learn"
-            android:layout_margin="10dp"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            android:textColor="@color/black"
-            />
-    </androidx.appcompat.widget.Toolbar>
 
 
     <LinearLayout
@@ -34,13 +15,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_plain"
+            android:text="@string/login_we"
             android:textStyle="bold"
             android:textSize="25sp"
             android:textColor="@color/black"
@@ -53,15 +34,16 @@
             android:id="@+id/etEmail_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
             android:background="@drawable/background_with_border"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:padding="12dp"
+            android:layout_margin="10dp"
+
             android:textAllCaps="false"
             android:textColor="@color/black"
 
-            android:textColorHint="@color/gray_black"
+            android:textColorHint="@color/gray"
             android:autofillHints="emailAddress"
             />
 
@@ -69,31 +51,44 @@
             android:id="@+id/etPassword_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:background="@drawable/background_with_border"
             android:hint="@string/password"
             android:padding="12dp"
+            android:layout_margin="10dp"
+
             android:textAllCaps="false"
 
             android:inputType="textPassword"
             android:textColor="@color/black"
 
 
-            android:textColorHint="@color/gray_black"
+
+            android:textColorHint="@color/gray"
             android:autofillHints="password"
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+/>
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnLogin_1"
-        android:layout_width="400dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:padding="15dp"
+        android:layout_margin="10dp"
+
         android:layout_gravity="center"
         android:textStyle="bold"
         android:text="@string/login"
@@ -101,18 +96,20 @@
 
         />
 
-    <Button
-        android:id="@+id/btnbacklogin_1"
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/blue"
-        android:text="@string/back_button"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+    <android.widget.Button
 
+    android:id="@+id/btnbacklogin_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/blue"
+
+        android:padding="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="false"
         />
 
 

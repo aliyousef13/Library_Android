@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_a"
+    android:padding="16dp"
+    android:layout_marginTop="100dp"
+
+
+    tools:context="fragments.Cyber_Fragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCourse"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/book_inf"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Course Title"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:layout_gravity="center"
+
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="4.0" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="1100 SAR"
+        android:textStyle="bold"
+        android:textColor="#1B8E2A"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/des_frag"
+        android:textSize="17sp"
+        android:textColor="@android:color/black" />
+
+
+
+    <android.widget.Button
+        android:id="@+id/buy_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_course"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/list_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_button"
+        android:textSize="16dp"
+        android:textColor="@color/red"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+</LinearLayout>

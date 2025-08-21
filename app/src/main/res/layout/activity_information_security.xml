@@ -81,7 +81,7 @@
       android:text="@string/list_vulnerabilities"
       android:textSize="20sp"
       android:textColor="@color/white"
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="5dp"
       android:textAllCaps="false"
 
       />
@@ -90,7 +90,7 @@
   <TextView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
+      android:layout_marginTop="10dp"
       android:text="@string/injection"
       android:textSize="20sp"
       android:textStyle="bold"
@@ -119,7 +119,7 @@
       android:layout_height="wrap_content"
       android:text="@string/sql"
       android:layout_marginTop="5dp"
-      android:textSize="18sp"
+      android:textSize="20sp"
       android:textColor="@color/black"
       android:background="@color/white"
       android:padding="8dp"
@@ -149,7 +149,7 @@
       android:text="@string/sql_implement"
 
       android:layout_marginTop="7dp"
-      android:textSize="18sp"
+      android:textSize="20sp"
       android:textColor="@color/black"
       android:background="@color/white"
       android:padding="8dp"
@@ -174,13 +174,16 @@
 
 
 
-  <Button
+  <android.widget.Button
       android:id="@+id/but_13"
       android:layout_width="wrap_content"
-      android:layout_height="55dp"
-      android:layout_marginLeft="10dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="4dp"
       android:layout_marginTop="20dp"
-      android:backgroundTint="@color/gray_black1"
+
+      android:background="@drawable/background_cyber"
+      android:backgroundTint="@null"
+
       android:text="@string/back_button"
       android:textAllCaps="false"
       android:textColor="@color/white_b"

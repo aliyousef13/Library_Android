@@ -24,6 +24,44 @@ public class Library extends AppCompatActivity {
             return insets;
         });
 
+        Button ordernow1= findViewById(R.id.osOrderButton);
+        Button ordernow2= findViewById(R.id.webOrderButton);
+        Button ordernow3= findViewById(R.id.infoOrderButton);
+
+        Button back4 = findViewById(R.id.but_14);
+
+
+        back4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent library = new Intent(Library.this,CategoriesDetail.class);
+                startActivity(library);
+
+            }
+        });
+        ordernow1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent buy1 = new Intent(Library.this, ListView_Price.class);
+                startActivity(buy1);
+            }
+        });
+
+        ordernow2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent buy2 = new Intent(Library.this,ListView_Price.class);
+                startActivity(buy2);
+            }
+        });
+
+        ordernow3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent buy3 = new Intent(Library.this,ListView_Price.class);
+                startActivity(buy3);
+            }
+        });
 
 
 

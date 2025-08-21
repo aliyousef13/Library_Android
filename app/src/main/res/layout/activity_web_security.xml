@@ -129,18 +129,21 @@
 
             />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/but_12"
             android:layout_width="wrap_content"
-            android:layout_height="55dp"
-            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
             android:layout_marginTop="30dp"
-            android:backgroundTint="@color/gray_black1"
+            android:background="@drawable/background_cyber"
+            android:backgroundTint="@null"
+
             android:text="@string/back_button"
             android:textAllCaps="false"
             android:textColor="@color/white_b"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
+
 
 
 </LinearLayout>

@@ -13,16 +13,25 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
         <activity
+            android:name=".Google"
+            android:exported="false" />
+        <activity
+            android:name=".MainCyber"
+            android:exported="false" />
+        <activity
+            android:name=".ListView_Price"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".payment_successful"
+            android:name=".Payment_successful"
             android:exported="false" />
         <activity
-            android:name=".payment_methode2"
+            android:name=".Payment_methode2"
             android:exported="false" />
         <activity
-            android:name=".payment_methode"
+            android:name=".Payment_methode"
             android:exported="false" />
         <activity
             android:name=".Library"
@@ -41,9 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity_constraint"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
