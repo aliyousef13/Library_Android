@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/img_GoogleLogo"
+        android:id="@+id/img_Google"
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:src="@drawable/google"

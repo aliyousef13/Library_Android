@@ -7,9 +7,9 @@
     <solid android:color="@color/blue" />
     <stroke
         android:width="3dp"
-        android:color="@color/white" /> <!-- حدود سوداء خفيفة -->
+        android:color="@color/white" />
 
-    <corners android:radius="2dp" /> <!-- حواف ناعمة-->
+    <corners android:radius="2dp" />
 
 
 </shape>

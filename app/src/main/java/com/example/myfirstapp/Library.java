@@ -34,8 +34,8 @@ public class Library extends AppCompatActivity {
         back4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent library = new Intent(Library.this,CategoriesDetail.class);
-                startActivity(library);
+                Intent ls = new Intent(Library.this,CategoriesDetail.class);
+                startActivity(ls);
 
             }
         });

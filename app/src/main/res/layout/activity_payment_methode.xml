@@ -196,7 +196,7 @@
             android:textColor="@color/red"
             android:padding="8dp"
             android:layout_margin="14dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             />
 
     </LinearLayout>

@@ -50,7 +50,7 @@ public class Cyber_Fragment extends Fragment {
 
 
 
-        //  لو استلمت بيانات من Adapter عبر arguments
+
         Bundle args = getArguments();
         if (args != null) {
             if (tvTitle != null) tvTitle.setText(args.getString("title", "Course Title"));
@@ -74,7 +74,7 @@ public class Cyber_Fragment extends Fragment {
                 @Override public void onClick(View v) {
                     Intent bac = new Intent(requireActivity(), ListView_Price.class);
                     startActivity(bac);
-//                    requireActivity().getSupportFragmentManager().popBackStack();
+
 
 
                 }

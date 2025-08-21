@@ -103,23 +103,7 @@
         android:layout_alignParentStart="true"
 
         />
-<!--    <android.widget.Button-->
-<!--        android:id="@+id/but_0"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
 
-<!--        android:layout_below="@id/but_3"-->
-
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:background="@drawable/background_cyber"-->
-<!--        android:text="@string/back_button"-->
-<!--        android:textAllCaps="false"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="20sp"-->
-
-<!--        android:layout_alignParentStart="true"-->
-
-<!--        />-->
 
     <TextView
         android:id="@+id/but_go"

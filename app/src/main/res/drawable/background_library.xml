@@ -3,13 +3,13 @@
     android:shape="rectangle">
 
 
-    <solid android:color="@color/blue" /> <!-- الخلفية اللبنية -->
+    <solid android:color="@color/blue" />
 
     <stroke
         android:width="4dp"
-        android:color="@color/blue" /> <!-- حدود سوداء خفيفة -->
+        android:color="@color/blue" />
 
-    <corners android:radius="5dp" /> <!-- حواف ناعمة-->
+    <corners android:radius="5dp" />
 
 
 </shape>
