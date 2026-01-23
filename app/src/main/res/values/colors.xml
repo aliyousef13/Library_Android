@@ -7,6 +7,7 @@
     <color name="gray_black">#383838</color>
     <color name="gray_black1">#2A2A2A</color>
     <color name="gray">#666666</color>
+    <color name="gray_wh">#66FFFFFF</color>
     <color name="light_gray">#E0E0E0</color>
 
 
@@ -28,6 +29,7 @@
     <color name="red">#FD0D00</color>
     <color name="wine">#8B0000</color>
     <color name="orangred">#F21212</color>
+    <color name="orangre">#F05858</color>
 
     <color name="yello">#D9CB61</color>
 

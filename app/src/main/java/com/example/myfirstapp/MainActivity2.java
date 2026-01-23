@@ -76,7 +76,7 @@ password_1.setOnClickListener(new View.OnClickListener() {
 register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent reg = new Intent(MainActivity2.this,CategoriesDetail.class);
+                Intent reg = new Intent(MainActivity2.this,RecycelerViewBooks.class);
                 startActivity(reg);
             }
         });

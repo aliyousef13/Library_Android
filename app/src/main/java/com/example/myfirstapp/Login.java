@@ -1,6 +1,7 @@
 package com.example.myfirstapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Login extends AppCompatActivity {
 
+
+    EditText etEmail_login, etPassword_login;
+    SharedPreferences sharedPref;
+    String username,password,user1,pass1;
+
+    Button btnLogin_1 , btnbacklogin_1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,41 +34,62 @@ public class Login extends AppCompatActivity {
             return insets;
         });
 
-        Button log_in = findViewById(R.id.btnLogin_1);
-        Button log_back = findViewById(R.id.btnbacklogin_1);
-        EditText email_2 = findViewById(R.id.etEmail_login);
-        EditText password_2 = findViewById(R.id.etPassword_login);
+
+        etEmail_login = findViewById(R.id.etEmail_login);
+        etPassword_login = findViewById(R.id.etPassword_login);
+        btnLogin_1 = findViewById(R.id.btnLogin_1);
+        btnbacklogin_1 = findViewById(R.id.btnbacklogin_1);
+
+        sharedPref = getSharedPreferences("Users",MODE_PRIVATE);
+        username = sharedPref.getString("username","");
+        password = sharedPref.getString("password","");
 
 
 
 
-email_2.setOnClickListener(new View.OnClickListener() {
+        etEmail_login.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         Toast.makeText(Login.this, "Email@123", Toast.LENGTH_SHORT).show();
     }
 });
 
-password_2.setOnClickListener(new View.OnClickListener() {
+        etPassword_login.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         Toast.makeText(Login.this,"******",Toast.LENGTH_SHORT).show();
     }
 });
 
+        if (!username.isEmpty() && !password.isEmpty()) {
+            Intent cond = new Intent(Login.this, CategoriesDetail.class);
+            startActivity(cond);
+            finish();
+            return;
+        }
 
 
-    log_in.setOnClickListener(new View.OnClickListener() {
+        btnLogin_1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent log = new Intent(Login.this,CategoriesDetail.class);
+            user1 = etEmail_login.getText().toString();
+            pass1 = etPassword_login.getText().toString();
+
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putString("username" , user1);
+            editor.putString("password" , pass1);
+            editor.apply();
+
+
+
+            Intent log = new Intent(Login.this,RecycelerViewBooks.class);
             startActivity(log);
         }
     });
 
 
 
-    log_back.setOnClickListener(new View.OnClickListener() {
+        btnbacklogin_1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent log_ba = new Intent(Login.this,MainActivity2.class);

@@ -28,10 +28,8 @@ public class PriceAdapter extends BaseAdapter {
     public PriceAdapter(Context context, ArrayList<Price> priceArrayList) {
         this.priceArrayList = priceArrayList;
         this.context = context;
-        inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
-
-
 
     @Override
     public int getCount() {
@@ -50,10 +48,11 @@ public class PriceAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View root = inflater.inflate(R.layout.price_products,null);
+
+        View root = inflater.inflate(R.layout.price_products, null);
 
         ImageView os_img = root.findViewById(R.id.circle_image1);
-        TextView  os_name = root.findViewById(R.id.os_name_tv);
+        TextView os_name = root.findViewById(R.id.os_name_tv);
         RatingBar rating1 = root.findViewById(R.id.rate1_bar);
         TextView os_price = root.findViewById(R.id.price1_tv);
 
@@ -61,20 +60,23 @@ public class PriceAdapter extends BaseAdapter {
         TextView price_cancel = root.findViewById(R.id.list_cancel);
         Button price_course = root.findViewById(R.id.buy_course);
 
-        // link items with data
-        os_img.setImageResource(priceArrayList.get(position).getImg());
-        os_name.setText(priceArrayList.get(position).getName());
-        rating1.setRating(priceArrayList.get(position).getRating());
-        os_price.setText((priceArrayList.get(position).getPrice())+"");
+        // ✅ الكائن الصحيح للعنصر الحالي
+        Price item = priceArrayList.get(position);
 
+        // link items with data
+        os_img.setImageResource(item.getImg());
+        os_name.setText(item.getName());
+        rating1.setRating((float) item.getRating());
+        os_price.setText(String.valueOf(item.getPrice()));
 
         price_but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent price = new Intent(context, Payment_methode.class);
-                context.startActivity(price);
+                Intent goPay = new Intent(context, Payment_methode.class);
+                context.startActivity(goPay);
             }
         });
+
         price_cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,15 +85,22 @@ public class PriceAdapter extends BaseAdapter {
             }
         });
 
+        // ✅ أهم جزء: Get Course → MainCyber مع Extras
         price_course.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent course = new Intent(context, MainCyber.class);
-                context.startActivity(course);
+
+                Intent i = new Intent(context, MainCyber.class);
+
+                // نفس المفاتيح اللي Fragment بقرأها
+                i.putExtra("title", item.getName());
+                i.putExtra("price", item.getPrice());              // float
+                i.putExtra("rating", (float) item.getRating());    // نحولها float
+                i.putExtra("imageRes", item.getImg());             // drawable res id
+
+                context.startActivity(i);
             }
         });
-
-
 
         return root;
     }

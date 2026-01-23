@@ -54,7 +54,8 @@ public class Cyber_Fragment extends Fragment {
         Bundle args = getArguments();
         if (args != null) {
             if (tvTitle != null) tvTitle.setText(args.getString("title", "Course Title"));
-            if (tvPrice != null) tvPrice.setText(((int) args.getFloat("price", 0)) + " SAR");
+            if (tvPrice != null) tvPrice.setText(args.getFloat("price", 0f) + " SAR");
+
             if (rating != null)  rating.setRating(args.getFloat("rating", 4f));
             int res = args.getInt("imageRes", 0);
             if (imgCourse != null && res != 0) imgCourse.setImageResource(res);

@@ -14,8 +14,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import adapters.PriceAdapter;
-
 public class Payment_methode extends AppCompatActivity {
 
     @SuppressLint("ResourceAsColor")
@@ -40,7 +38,7 @@ public class Payment_methode extends AppCompatActivity {
         visa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent vis = new Intent(Payment_methode.this, PriceAdapter.class);
+                Intent vis = new Intent(Payment_methode.this, ListView_Price.class);
                 startActivity(vis);
             }
 

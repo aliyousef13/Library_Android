@@ -105,6 +105,8 @@
         />
 
 
+
+
     <TextView
         android:id="@+id/but_go"
         android:layout_width="wrap_content"
@@ -121,6 +123,22 @@
         android:textSize="22sp"
         android:layout_alignParentEnd="true"
 
+        />
+
+    <android.widget.Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textSize="15sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/but_go"
+        android:textAllCaps="false"
+
+        android:background="@drawable/black"
+        android:textColor="@color/white"
         />
 
 

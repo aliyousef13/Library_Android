@@ -52,7 +52,7 @@ public class Google extends AppCompatActivity {
     but_goog.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent bu_go = new Intent(Google.this,CategoriesDetail.class);
+            Intent bu_go = new Intent(Google.this,RecycelerViewBooks.class);
             startActivity(bu_go);
         }
     });

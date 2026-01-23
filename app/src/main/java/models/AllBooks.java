@@ -1,21 +1,16 @@
 package models;
 
-public class Price {
+public class AllBooks {
     private int id;
     private String name;
-    private float rating;
-    private float price;
-
     private int img;
 
-    public Price() {
+    public AllBooks() {
     }
 
-    public Price(int id, String name, float rating, float price, int img) {
+    public AllBooks(int id, String name, int img) {
         this.id = id;
         this.name = name;
-        this.rating = rating;
-        this.price = price;
         this.img = img;
     }
 
@@ -33,22 +28,6 @@ public class Price {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
     }
 
     public int getImg() {

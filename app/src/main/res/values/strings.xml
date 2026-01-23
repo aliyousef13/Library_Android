@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">MyFirstApp</string>
+    <string name="app_name">CyberLearnApp</string>
     <string name="welcome">Welcome, Ali</string>
     <string name="welcome_plain">Welcome</string>
     <string name="welcome_cyberLearn">Welcome to CyberLearn</string>
@@ -10,6 +10,12 @@
     <string name="os_sec">OS Security</string>
     <string name="web_security">Web Security</string>
     <string name="in_security">Information Security</string>
+
+
+    <string name="books">My Books</string>
+
+    <string name="price_placeholder">0 SAR</string>
+
 
 
 
@@ -26,6 +32,7 @@
 
 
     <string name="back_button">Back</string>
+    <string name="reset">Reset Login</string>
     <string name="cancel_button">Cancel</string>
     <string name="order_button">Order Now</string>
     <string name="buy_button">Buy Now</string>
@@ -36,12 +43,8 @@
     <string name="des_frag">Understanding cyber risks and how to prevent them....</string>
 
 
-
-
     <string name="text_os">An operating system (OS) is the main software that manages computer hardware and provides a platform for running applications. Examples include Windows, Linux, and macOS</string>
     <string name="attack_os">An attacker exploits a flaw to gain admin/root access.</string>
-
-
 
 
     <string name="sql_practical">If the site uses a direct SQL query like</string>
@@ -64,9 +67,6 @@
     <string name="result_sql">📌 Result: Log in to your account without a password!</string>
 
 
-
-
-
     <string name="title_web">Web Application Security</string>
 
     <string name="text_web">Web security focuses on protecting websites from attacks such as XSS and CSRF, which may allow hackers to steal data or hijack user sessions.</string>
@@ -82,8 +82,6 @@
     <string name="xss_attack">&lt;script&gt;alert(\'XSS Attack\')&lt;/script&gt;</string>
 
     <string name="result_xss">📌 Result: JavaScript runs in the user\'s browser without permission!</string>
-
-
 
 
     <string name="about_os">Basics of processes, memory, scheduling, and I/O systems.</string>
