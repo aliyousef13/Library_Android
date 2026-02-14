@@ -2,11 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="opacityblack">#E2000000</color>
-    <color name="black1">#141414</color>
+    <color name="black1">#2A2626</color>
 
     <color name="gray_black">#383838</color>
     <color name="gray_black1">#2A2A2A</color>
     <color name="gray">#666666</color>
+    <color name="gray2">#9E9E9E</color>
     <color name="gray_wh">#66FFFFFF</color>
     <color name="light_gray">#E0E0E0</color>
 
@@ -14,11 +15,14 @@
 
 
     <color name="white">#FFFFFFFF</color>
+    <color name="white_s">#FDF5F5</color>
     <color name="white_a">#F2F0F0</color>
     <color name="white_b">#CECECE</color>
     <color name="white_bs">#B6B2B2</color>
 
     <color name="blue">#2092E7</color>
+    <color name="primary">#1E3A8A</color>
+
     <color name="bluebrown">#ADD8E6</color>
     <color name="bluegradient">#E3F2FD</color>
     <color name="green">#07A20F</color>

@@ -1,7 +1,6 @@
 package com.example.myfirstapp;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +31,7 @@ public class CategoriesDetail extends AppCompatActivity {
         Button web = findViewById(R.id.but_2);
         Button inf = findViewById(R.id.but_3);
         Button os = findViewById(R.id.but_4);
-        btnReset = findViewById(R.id.btnReset);
+
 
 
 web.setOnClickListener(new View.OnClickListener() {
@@ -78,21 +77,6 @@ back.setOnClickListener(new View.OnClickListener() {
     }
 });
 
-btnReset.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-
-        SharedPreferences shprefs = getSharedPreferences("Users", MODE_PRIVATE);
-
-        SharedPreferences.Editor editor = shprefs.edit();
-        editor.clear();
-        editor.apply();
-
-        Intent re = new Intent(CategoriesDetail.this, Login.class);
-        startActivity(re);
-
-    }
-});
 
 
     }

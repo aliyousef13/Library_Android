@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:id="@+id/etBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book name"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+
+    <Spinner
+        android:id="@+id/spBookImg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"/>
+
+    <android.widget.Button
+        android:id="@+id/btnSaveBook"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:background="@drawable/background_favorite"
+        android:textColor="@color/white"
+        />
+
+    <android.widget.Button
+        android:id="@+id/btnCancelBook"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:background="@drawable/background_library"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

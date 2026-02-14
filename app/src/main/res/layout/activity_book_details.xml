@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <ImageView
+                    android:id="@+id/detailsImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/white_b" />
+
+                <TextView
+                    android:id="@+id/detailsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/opacityblack"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp" />
+
+
+                <android.widget.Button
+                    android:id="@+id/btnSaveToSqlite"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Save to Favorite"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:background="@drawable/background_favorite"
+                    android:textColor="@color/white"
+                    />
+
+                <android.widget.Button
+                    android:id="@+id/btnOpenSaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Open Saved Books"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:background="@drawable/background_library"
+                    android:textColor="@color/white" />
+
+                <android.widget.Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/back_button"
+                    android:textAllCaps="false"
+                    android:background="@drawable/background_with_border"
+                    android:textColor="@color/opacityblack" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

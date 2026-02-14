@@ -16,17 +16,21 @@
 
     <string name="price_placeholder">0 SAR</string>
 
-
+    <string name="saved_books_fav">Saved Books <font color="red">Favorite</font></string>
 
 
     <string name="blood">BloodBank</string>
     <string name="famous">famous</string>
     <string name="email">Email address</string>
+    <string name="email2">Email </string>
     <string name="username">User name</string>
     <string name="password">password</string>
+    <string name="password2">Password</string>
 
     <string name="cyber_learn">CyberLearn</string>
     <string name="register">Register</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
     <string name="login">Log in</string>
     <string name="login_we">Login</string>
 

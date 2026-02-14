@@ -60,7 +60,7 @@ public class PriceAdapter extends BaseAdapter {
         TextView price_cancel = root.findViewById(R.id.list_cancel);
         Button price_course = root.findViewById(R.id.buy_course);
 
-        // ✅ الكائن الصحيح للعنصر الحالي
+
         Price item = priceArrayList.get(position);
 
         // link items with data
@@ -85,14 +85,14 @@ public class PriceAdapter extends BaseAdapter {
             }
         });
 
-        // ✅ أهم جزء: Get Course → MainCyber مع Extras
+
         price_course.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent i = new Intent(context, MainCyber.class);
 
-                // نفس المفاتيح اللي Fragment بقرأها
+
                 i.putExtra("title", item.getName());
                 i.putExtra("price", item.getPrice());              // float
                 i.putExtra("rating", (float) item.getRating());    // نحولها float

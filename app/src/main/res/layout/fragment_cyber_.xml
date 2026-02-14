@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
 
-        android:text="1100 SAR"
+        android:text="@string/price_placeholder"
         android:textStyle="bold"
         android:textColor="#1B8E2A"
         android:textSize="16sp" />

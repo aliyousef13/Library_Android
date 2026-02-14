@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saved_books_fav"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/opacityblack"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="20dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSaved"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:clipToPadding="false" />
+    </androidx.cardview.widget.CardView>
+
+    <android.widget.Button
+        android:id="@+id/btnBackSaved"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/back_button"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/background_library"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
