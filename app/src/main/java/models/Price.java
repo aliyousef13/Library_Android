@@ -5,11 +5,9 @@ public class Price {
     private String name;
     private float rating;
     private float price;
-
     private int img;
 
-    public Price() {
-    }
+    public Price() {}
 
     public Price(int id, String name, float rating, float price, int img) {
         this.id = id;
@@ -19,43 +17,15 @@ public class Price {
         this.img = img;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public String getName() { return name; }
+    public float getRating() { return rating; }
+    public float getPrice() { return price; }
+    public int getImg() { return img; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
-    public int getImg() {
-        return img;
-    }
-
-    public void setImg(int img) {
-        this.img = img;
-    }
+    public void setId(int id) { this.id = id; }
+    public void setName(String name) { this.name = name; }
+    public void setRating(float rating) { this.rating = rating; }
+    public void setPrice(float price) { this.price = price; }
+    public void setImg(int img) { this.img = img; }
 }

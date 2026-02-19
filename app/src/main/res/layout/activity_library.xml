@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Toolbar -->
+
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -36,7 +36,7 @@
                 android:padding="6dp" />
         </androidx.appcompat.widget.Toolbar>
 
-        <!-- Content wrapper -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,16 +89,7 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"/>
 
-                    <android.widget.Button
-                        android:id="@+id/osOrderButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:background="@drawable/background_library"
-                        android:text="@string/order_button"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold"/>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -143,16 +134,7 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"/>
 
-                    <android.widget.Button
-                        android:id="@+id/webOrderButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:background="@drawable/background_library"
-                        android:text="@string/order_button"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold"/>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -197,30 +179,47 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"/>
 
-                    <android.widget.Button
-                        android:id="@+id/infoOrderButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:background="@drawable/background_library"
-                        android:text="@string/order_button"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold"/>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Back Button -->
-            <android.widget.Button
-                android:id="@+id/but_14"
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/back_button"
-                android:textAllCaps="false"
-                android:textColor="@color/opacityblack"
-                android:textSize="18sp"
-                android:background="@drawable/background_with_border"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+
+                <android.widget.Button
+                    android:id="@+id/backLib"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="@string/back_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/opacityblack"
+                    android:textSize="18sp"
+                    android:background="@drawable/background_with_border"/>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="1dp"/>
+
+                <!-- زر Order Now موحّد -->
+                <android.widget.Button
+                    android:id="@+id/orderNowAll"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="@string/order_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/background_library"/>
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

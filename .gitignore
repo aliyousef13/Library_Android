@@ -13,3 +13,11 @@
 .externalNativeBuild
 .cxx
 local.properties
+app/src/main/java/com/example/myfirstapp/Google.java
+app/src/main/java/com/example/myfirstapp/MainActivity2.java
+app/src/main/java/com/example/myfirstapp/MainActivity_constraint.java
+
+app/src/main/res/layout/activity_google.xml
+app/src/main/res/layout/activity_main2.xml
+app/src/main/res/layout/activity_constraint.xml
+app/src/main/res/layout/activity_relative.xml

@@ -23,7 +23,7 @@ public class MainCyber extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        // جهّز Bundle بنفس المفاتيح اللي Fragment بقرأها
+
         Bundle args = new Bundle();
         args.putString("title", intent.getStringExtra("title"));
         args.putFloat("price", intent.getFloatExtra("price", 0f));

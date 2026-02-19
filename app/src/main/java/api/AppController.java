@@ -12,8 +12,13 @@ public class AppController extends Application {
 
     public static final String TAG = AppController.class.getSimpleName();
 
-    public static final String link = "https://openlibrary.org/search.json";
 
+    // Uses Get
+    public static final String link ="https://dummyjson.com/products?limit=9&select=price,rating";
+
+
+
+// { json object request  ,,,,, [ json array
 
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;

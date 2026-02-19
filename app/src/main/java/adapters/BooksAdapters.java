@@ -26,7 +26,7 @@ public class BooksAdapters extends RecyclerView.Adapter<BooksAdapters.Holder> {
 
 
     public BooksAdapters(Context context, ArrayList<AllBooks> list) {  // يستقبل القائمة من Activity.
-        this.context = context;                                        // إذا القائمة null يعمل قائمة فاضية عشان ما يصير crash.
+        this.context = context;
         this.booklist = (list != null) ? list : new ArrayList<>();
     }
 

@@ -19,13 +19,13 @@ public class BooksDbHelper extends SQLiteOpenHelper {
 
     public BooksDbHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
-        // ✅ مثل الفيديو: افتح قاعدة البيانات مرة
+
         db = getWritableDatabase();
     }
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        // تستخدم SQL جاهزة من AllBooks.CREATE_TABLE حتى يكون التعريف بمكان واحد.
+
         sqLiteDatabase.execSQL(AllBooks.CREATE_TABLE);
     }
 
@@ -69,11 +69,7 @@ public class BooksDbHelper extends SQLiteOpenHelper {
         return rows > 0;
     }
 
-    //  Delete by name (عندك) - يرجع عدد الصفوف
-    public int deleteBookByName(String name) {
-        return db.delete(AllBooks.TABLE_BOOKS, AllBooks.COL_NAME + "=?",
-                new String[]{name});
-    }
+
 
     //  Get all
     public ArrayList<AllBooks> getAllBooks() {
@@ -95,22 +91,7 @@ public class BooksDbHelper extends SQLiteOpenHelper {
         return list;
     }
 
-    //  Get one by id
-    public AllBooks getBookById(int bookId) {
-        AllBooks book = null;
 
-        Cursor c = db.rawQuery("SELECT * FROM " + AllBooks.TABLE_BOOKS + " WHERE " + AllBooks.COL_ID + "=?",
-                new String[]{String.valueOf(bookId)});
-
-        if (c.moveToFirst()) {
-            int id = c.getInt(c.getColumnIndexOrThrow(AllBooks.COL_ID));
-            String name = c.getString(c.getColumnIndexOrThrow(AllBooks.COL_NAME));
-            int img = c.getInt(c.getColumnIndexOrThrow(AllBooks.COL_IMG));
-            book = new AllBooks(id, name, img);
-        }
-        c.close();
-        return book;
-    }
 
     //  Close DB
     public void closeDB() {

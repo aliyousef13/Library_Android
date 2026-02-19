@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import models.Price;
 
 public class PriceAdapter extends BaseAdapter {
+
     Context context;
     ArrayList<Price> priceArrayList = new ArrayList<>();
     LayoutInflater inflater;
@@ -60,46 +61,34 @@ public class PriceAdapter extends BaseAdapter {
         TextView price_cancel = root.findViewById(R.id.list_cancel);
         Button price_course = root.findViewById(R.id.buy_course);
 
-
         Price item = priceArrayList.get(position);
 
-        // link items with data
+
         os_img.setImageResource(item.getImg());
+
         os_name.setText(item.getName());
-        rating1.setRating((float) item.getRating());
+        rating1.setRating(item.getRating());
         os_price.setText(String.valueOf(item.getPrice()));
 
-        price_but.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goPay = new Intent(context, Payment_methode.class);
-                context.startActivity(goPay);
-            }
+        price_but.setOnClickListener(v -> {
+            Intent goPay = new Intent(context, Payment_methode.class);
+            context.startActivity(goPay);
         });
 
-        price_cancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent cancel = new Intent(context, Library.class);
-                context.startActivity(cancel);
-            }
+        price_cancel.setOnClickListener(v -> {
+            Intent cancel = new Intent(context, Library.class);
+            context.startActivity(cancel);
         });
 
+        price_course.setOnClickListener(v -> {
+            Intent i = new Intent(context, MainCyber.class);
 
-        price_course.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            i.putExtra("title", item.getName());
+            i.putExtra("price", item.getPrice());
+            i.putExtra("rating", item.getRating());
+            i.putExtra("imageRes", item.getImg()); //   للـ Fragment
 
-                Intent i = new Intent(context, MainCyber.class);
-
-
-                i.putExtra("title", item.getName());
-                i.putExtra("price", item.getPrice());              // float
-                i.putExtra("rating", (float) item.getRating());    // نحولها float
-                i.putExtra("imageRes", item.getImg());             // drawable res id
-
-                context.startActivity(i);
-            }
+            context.startActivity(i);
         });
 
         return root;

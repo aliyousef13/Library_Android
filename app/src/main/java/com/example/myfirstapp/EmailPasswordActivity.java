@@ -24,7 +24,7 @@ public class EmailPasswordActivity extends AppCompatActivity {
     String TAG = "A";
 
     EditText email_edi, pass_edi;
-    Button signIn_but, signup_but ;
+    Button signIn_but, signup_but;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,8 @@ public class EmailPasswordActivity extends AppCompatActivity {
         pass_edi = findViewById(R.id.pass_edi);
         signup_but = findViewById(R.id.signup_but);
         signIn_but = findViewById(R.id.signIn_but);
+
+
 
         signup_but.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,7 +72,7 @@ public class EmailPasswordActivity extends AppCompatActivity {
                     return;
                 }
 
-// نستدعي الدخول الحقيقي
+
                 signInAccount(email, pass);
             }
         });
@@ -92,9 +94,8 @@ public class EmailPasswordActivity extends AppCompatActivity {
         }
     }
 
-//    private void reload() {
-//    }
 
+// Sign Up
     private void createAccount(String email, String password) {
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -115,7 +116,7 @@ public class EmailPasswordActivity extends AppCompatActivity {
     }
 
 
-    // signIn ---------------------------
+    // signIn
     private void signInAccount(String email, String password) {
 
         mAuth.signInWithEmailAndPassword(email, password)

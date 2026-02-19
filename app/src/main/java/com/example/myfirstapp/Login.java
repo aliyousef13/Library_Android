@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Login extends AppCompatActivity {
 
+// Use A ShardPreferences
 
     EditText etEmail_login, etPassword_login;
     SharedPreferences sharedPref;

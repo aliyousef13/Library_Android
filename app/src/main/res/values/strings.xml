@@ -33,6 +33,10 @@
     <string name="signin">Sign In</string>
     <string name="login">Log in</string>
     <string name="login_we">Login</string>
+    <string name="logout_recy">Logout</string>
+
+    <string name="firebase">Secure login using Firebase Authentication</string>
+    <string name="SignContinue">Sign in to continue</string>
 
 
     <string name="back_button">Back</string>
