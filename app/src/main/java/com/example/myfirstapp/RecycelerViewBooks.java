@@ -25,7 +25,7 @@ import models.AllBooks;
 public class RecycelerViewBooks extends AppCompatActivity {
 
     RecyclerView recyclerBooks;
-    BooksAdapters adapter; // هو الى بعرض العناصر
+    BooksAdapters adapter;
     ArrayList<AllBooks> booklist;
 
     TextView tvTitle , btnLogout;
@@ -50,7 +50,7 @@ public class RecycelerViewBooks extends AppCompatActivity {
         tvTitle = findViewById(R.id.tvTitle);
         btnLogout = findViewById(R.id.btnLogout);
 
-        //  Grid أغلفة كتب
+
         recyclerBooks.setLayoutManager(new GridLayoutManager(this, 3));
         recyclerBooks.setHasFixedSize(true);
 
